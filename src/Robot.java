@@ -1,21 +1,16 @@
-public class Robot implements Interface {
+public class Robot {
 
-    private int Shiftx;
-    private int Shifty;
     private int positionx;
 
     private int positiony;
     Mata_angin mata_angin;
-    Mata_angin nilai_mataangin;
-    public String input = "AARAAAA";
+    public String input = "AARADAAA";
     String[] strSplit = input.split("");
 
 
     public Robot(Mata_angin mata_angin, int positionx, int positiony) {
         this.positionx = positionx;
         this.positiony = positiony;
-        this.Shiftx = Shiftx;
-        this.Shifty = Shifty;
 
         for (String s : strSplit) {
 
@@ -81,31 +76,12 @@ public class Robot implements Interface {
     }
 
 
-    @Override
-    public int getPositionx() {
-        return positionx;
-    }
 
-    @Override
-    public void setPositionx(int positionx) {
-        this.positionx = positionx;
-    }
-
-    @Override
-    public int getPositiony() {
-        return positiony;
-    }
-
-    @Override
-    public void setPositiony(int positiony) {
-        this.positiony = positiony;
-
-    }
 
 
     public void move() {
-        this.positionx = this.positionx + Shiftx;
-        this.positiony = this.positiony + Shifty;
+        this.positionx = this.positionx;
+        this.positiony = this.positiony;
     }
 
 
